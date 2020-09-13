@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand');
+
+body, html{
+		width: 100%;
+		height: 100%;	
+		margin: 0;
+		font-family: 'Just Another Hand', cursive;
+		overflow-X: hidden;/* optional */
+		background-color: #f6f6f8;
+	}
+
+.top {
+	background-color: #e3e3e3;
+	text-align: center;
+	font-size: 70px;
+}
+
+.back {
+	font-family: monospace;
+	font-size: 60%;
+	border-radius: 15px;
+	position: absolute;
+	right: 15px;
+	height: fit-content;
+	padding: 2px;
+	margin: 5px;
+	border: none;
+	background-color: #e3e3e3;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+.back:hover {
+	color: #c60021;
+}
+
+.container {
+	height: 100%;
+	background: #f6f6f8;
+	padding: 2%;
+}
+
+.frame {
+	height: 80%;
+	background-color: #e3e3e3;
+	padding: 0.5px;
+	text-align: center;
+}
+
+.frame img {
+	
+	height: 100%;
+}
+
+.frame .prev {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 20%;
+	padding: 2%;
+	border: none;
+	border-radius: 10px;
+	font-size: 150%;
+}
+
+.frame .next {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 20%;
+	padding: 2%;
+	border: none;
+	border-radius: 10px;
+	font-size: 150%;
+}
+
+.frame .prev:hover, .next:hover {
+	color: #c60021;
+}
+
+.rotate {
+	width: 100%;
+	position: relative;
+	font-size: 40px;
+	background-color: #e3e3e3;
+	color: black;
+	padding: 4px;
+	margin-top: 2px;
+	font-family: monospace;
+	text-align: center;
+	visibility: hidden;
+}
+
+@media only screen and (max-device-width: 450px) {
+	.rotate {
+		visibility: visible;
+	}
+}

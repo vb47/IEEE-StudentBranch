@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery | Event-1</title>
+        <link rel="stylesheet" href="event1.css">
+        <script type="text/javascript" src="event1.js"></script>
+    </head>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <body>
+        <header class="top">Photo Gallery
+            <button class="back" onclick="goBack()"> << Back</button>
+        </header>
+
+        <div class="rotate">
+            If Image Isn't clear, Please Rotate Your Screen.
+        </div>
+        
+        <!------------------------------------------------------------------------------------------------------------------------>
+        <div class="container">
+            
+            <div class="frame">
+                <button class="prev" onclick="prev()"> < </button>
+                <img id="img" src="./event1/0.jpeg">
+                <button class="next" onclick="next()"> > </button>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------>
+
+    </body>
+</html>

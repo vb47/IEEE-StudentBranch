@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IEEE-SB | KLEMSSCET</title>
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="message.js"></script>
+    </head>
+    <body>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+        <header>
+            <a href="#" class="logo">Avada:</a>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="./main.html">Home</a></li>
+                    <li><a href="./committe.html">Committe</a></li>
+                    <li><a href="./gallery.html" class="active">Gallery</a></li>
+                    <li><a href="./events.html">Events under IEEE-SB</a></li>
+                    <li><a href="#"> Contact </a>
+                        <ul>
+                            <li>Phone: <a id="phone" onclick="ctcP()">
+                                <div class="tooltip">948 045 4807
+                                    <span class="tooltiptext">Copy To Clipboard</span>
+                                </div> <br></a>
+                                Mail: <a class="mail" onclick="ctcE()">
+                                    <div class="tooltip">sujata.patil@klescet.ac.in
+                                        <span class="tooltiptext">Copy To Clipboard</span>
+                                    </div>
+                                    </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+<!------------------------------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+<div class="container">
+    <div class="welcome">
+        <h2>Gallery</h2>
+    </div>
+
+    <div class="event" onclick="location.href='Gallery/event1.html'">
+        <img class="poster" src="./images/Poster1.jpeg" width="230px" height="345px">
+        <h2>Virtual Inaugration Of<br> KLE MSSCET IEEE Student Branch (STB5029)</h2>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+<footer class="description">
+    <img class="ieee_logo" src="images/ieee.jpeg" alt="IEEE Logo" width="50" height="50">
+    <div class="collegeinfo">
+        <h2>KLE DR.M S Sheshgiri College of Engineering and Technology</h2>
+        <h3>IEEE Student Branch - STB5029</h3>
+    </div>
+    <img class="kle_logo" src="images/kle.jpeg" alt="KLE Logo" width="50" height="50">
+</footer>
+<!------------------------------------------------------------------------------------------------------------------------>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.js"
+                integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+                crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.menu-toggle').click(function(){
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+    </body>
+</html>
